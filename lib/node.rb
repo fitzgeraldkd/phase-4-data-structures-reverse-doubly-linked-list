@@ -6,4 +6,8 @@ class Node
     @next_node = next_node
     @prev_node = prev_node
   end
+
+  def reverse!
+    @next_node, @prev_node = [@prev_node, @next_node]
+  end
 end
